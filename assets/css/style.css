@@ -1,0 +1,132 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%; /*1 rem = 10px*/
+  --primary-color: #51B86E;
+  --headline: #212529;
+  --paragraph: #495057;
+  --header-background: #DCE9E2;
+  --dados-background: #FFFAF1;
+  --servicos-background: #F7F9F9;
+  --brand-green:#DCE9E2;
+}
+
+body{
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+header nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7.2rem;
+  transition: all .5s;
+}
+
+.heroSection::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: var(--header-background);
+  width: 100%;
+  height: 115.2rem;
+}
+
+.heroSection{
+  width:37.5rem;
+}
+
+.container{
+  padding: 0rem 2.4rem;
+}
+
+.heroSection h4{
+  margin-top: 4rem;
+  font-size: 1.4rem;
+  color: var(--primary-color);
+}
+
+h1{
+  margin-top: 1.6rem;
+  font-size: 3.4rem;
+  color: var(--headline);
+  line-height: 130%;
+}
+
+.heroSection .container > p{
+  margin: 2.4rem 0 3.2rem 0;
+  font-size: 1.8rem;
+  color: var(--paragraph);
+  line-height: 150%;
+  font-weight: 400;
+}
+
+
+.heroSection img{
+  margin: auto;
+  display: block;
+  width: 26.4rem;
+}
+
+.servicos h4{
+  color: var(--primary-color) !important;
+  margin-block: 10rem 1.6rem;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 150%;
+  letter-spacing: 0.08em;
+  position: relative;
+}
+
+
+
+.about{
+    text-align: left;
+    padding-block: 10rem 11.6rem;
+    background-color: var(--dados-background);
+}
+
+.about h4{
+    margin-bottom: 1.6rem;
+    font-size: 1.4rem;
+    line-height: 150%;
+    color: var(--primary-color);
+}
+
+.about h3{
+    margin-bottom: 2.4rem;
+    font-size: 3rem;
+    line-height: 3.9rem;
+}
+
+.about p{
+    margin-bottom: 4.4rem;
+    font-size: 1.6rem;
+    line-height: 150%;
+    color: var(--paragraph);
+}
+
+.contact{
+    text-align: left;
+}
+
+.contact h3{
+    margin-top: 10rem;
+    font-size: 30px;
+    line-height: 39px;
+}
+
+.contact address{
+    margin: 3.2rem 0;
+}
+
+.contact img{
+    margin-bottom: 10rem;
+}

@@ -85,48 +85,62 @@ h1{
   position: relative;
 }
 
-
-
 .about{
-    text-align: left;
-    padding-block: 10rem 11.6rem;
-    background-color: var(--dados-background);
+  margin-top: 5rem;
+  text-align: left;
+  padding-block: 10rem 11.6rem;
+  background-color: var(--dados-background);
 }
 
 .about h4{
-    margin-bottom: 1.6rem;
-    font-size: 1.4rem;
-    line-height: 150%;
-    color: var(--primary-color);
+  margin-bottom: 1.6rem;
+  font-size: 1.4rem;
+  line-height: 150%;
+  color: var(--primary-color);
 }
 
 .about h3{
-    margin-bottom: 2.4rem;
-    font-size: 3rem;
-    line-height: 3.9rem;
+  margin-bottom: 2.4rem;
+  font-size: 3rem;
+  line-height: 3.9rem;
 }
 
 .about p{
-    margin-bottom: 4.4rem;
-    font-size: 1.6rem;
-    line-height: 150%;
-    color: var(--paragraph);
+  margin-bottom: 4rem;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: var(--paragraph);
+}
+
+.faq{
+  margin-top: 5rem;
+}
+
+.faq h4{
+  margin-bottom: 1.6rem;
+  font-size: 1.4rem;
+  line-height: 150%;
+  color: var(--primary-color);
+}
+
+.faq .accordion-header button{
+  font-size: 2.2rem !important;
 }
 
 .contact{
-    text-align: left;
+  text-align: left;
 }
 
 .contact h3{
-    margin-top: 10rem;
-    font-size: 30px;
-    line-height: 39px;
+  margin-top: 10rem;
+  font-size: 30px;
+  line-height: 39px;
 }
 
 .contact address{
-    margin: 3.2rem 0;
+  margin: 3.2rem 0;
 }
 
 .contact img{
-    margin-bottom: 10rem;
+  margin-bottom: 10rem;
 }

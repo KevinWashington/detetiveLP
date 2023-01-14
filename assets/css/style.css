@@ -127,6 +127,21 @@ h1{
   font-size: 2.2rem !important;
 }
 
+.faq .accordion-body{
+  font-size: 2rem;
+  text-align: justify;
+}
+.faq .accordion-button:focus{
+  border-color: var(--brand-green) !important;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(98, 255, 98, 0.25);
+}
+
+.faq .accordion-button:not(.collapsed){ 
+  background-color: var(--brand-green) !important;
+  color: var(--primary-color) !important;
+}
+
 .contact{
   text-align: left;
 }

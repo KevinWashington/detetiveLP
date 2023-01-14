@@ -151,7 +151,7 @@ nav {
   display: flex;
 
   height: var(--nav-height);
-
+  width: 100vw;
   position: fixed;
   z-index: 999999;
   top: 0;

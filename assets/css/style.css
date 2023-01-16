@@ -85,6 +85,21 @@ h1{
   position: relative;
 }
 
+.modals {
+  position: fixed;
+  z-index: 9999999;
+  top: 50vh;
+  left: 50vw;
+  width: 100%;
+  font-size: 1.8rem;
+  text-align: justify;
+  border: 1px solid #495057;
+  border-radius: 10px;
+  padding: 10px;
+  transform: translateX(-50%) translateY(-50%);
+  
+}
+
 .about{
   margin-top: 5rem;
   text-align: left;
@@ -173,11 +188,10 @@ h1{
   padding: 10px 0;
   background: none;
   border: none;
-  border-bottom: 1px solid #666;
+  border-bottom: 2px solid #666;
   color: rgb(26, 26, 26);
   font-size: 14px;
   border-radius: 0;
-  
   outline: none;
   transition: border-color .2s;
 }
@@ -193,6 +207,27 @@ h1{
 .contact .app-form-button {
   margin: 2rem 0 !important;
   width: 100%;
+}
+
+.contact a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  font-weight: 500;
+  margin: 2rem 0 !important;
+  text-decoration: none;
+  width: 100%;
+}
+
+.contact a:hover{
+  background-color: #25d366;
+  color: #FFF;
+}
+
+.contact h2{
+  font-size: 1.8rem;
+  text-align: center;
 }
 
 .whatsapp-flutuante{

@@ -145,6 +145,44 @@ h1{
   text-align: justify;
 }
 
+.app-form-group {
+  margin-bottom: 15px;
+}
+
+.app-form-group.message {
+  margin-top: 40px;
+}
+
+.app-form-group.buttons {
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.app-form-control {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  color: rgb(26, 26, 26);
+  font-size: 14px;
+
+  outline: none;
+  transition: border-color .2s;
+}
+
+.app-form-control::placeholder {
+  color: rgb(102, 102, 102);
+}
+
+.app-form-control:focus {
+  border-bottom-color: rgb(53, 53, 53);
+}
+
+.app-form-button {
+  margin: 2rem 0 !important;
+  width: 100%;
+}
 
 .contact{
   text-align: left;

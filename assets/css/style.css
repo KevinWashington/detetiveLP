@@ -87,17 +87,29 @@ h1{
 
 .modals {
   position: fixed;
-  z-index: 9999999;
-  top: 50vh;
-  left: 50vw;
-  width: 100%;
-  font-size: 1.8rem;
-  text-align: justify;
-  border: 1px solid #495057;
+  top: 0;
+  left: 0;
+  z-index: 9999999999;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba( 255, 255, 255, 0.6 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
   border-radius: 10px;
-  padding: 10px;
-  transform: translateX(-50%) translateY(-50%);
-  
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.modal-title{
+  font-size: 1.8rem;
+}
+
+.modal-body {
+  font-size: 1.6rem;
 }
 
 .about{
@@ -128,7 +140,7 @@ h1{
 }
 
 .faq{
-  margin: 8rem 0;
+  padding: 8rem 0;
 }
 
 .faq h4{
@@ -162,10 +174,10 @@ h1{
 .contact{
   text-align: left;
   background-color: var(--dados-background);
+  padding-block: 8rem;
 }
 
 .contact h3{
-  padding-top: 8rem;
   font-size: 30px;
   line-height: 39px;
 }
@@ -228,6 +240,26 @@ h1{
 .contact h2{
   font-size: 1.8rem;
   text-align: center;
+}
+
+footer{
+  background-color: var(--primary-color);
+  color: #fff;
+  padding-block: 6rem;
+}
+
+footer h1 {
+  color: #FFF;
+}
+
+footer .logo {
+  display: block;
+  margin-bottom: .9rem;
+}
+
+footer p a {
+  text-decoration: none;
+  color: white;
 }
 
 .whatsapp-flutuante{

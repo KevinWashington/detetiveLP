@@ -284,16 +284,38 @@
           <div class="swiper-button-prev swiper-navBtn"></div>
           <div class="swiper-pagination"></div>
           
-          <div class="modals wrapper d-none" id="modal1">
-            <h2>ESSE É O HEADER 1</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ducimus, provident voluptatem unde tenetur earum eaque amet ipsa quae porro sequi aliquam, eligendi quia cumque? Libero voluptatem error voluptas cum.</p>
-            <button onclick="closemodal()" id="closemodal">fechar</button>
+          <div class="modals d-none" id="modal1">
+            <div class="modal-dialog wrapper">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="btn-close" onclick="closemodal()" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque maiores corporis fuga pariatur aut perferendis voluptatibus officiis ipsam! Quis, aut. A culpa odit ullam est incidunt quam autem aliquam natus.
+                </div>
+                <div class="modal-footer">
+                  <button class="button" onclick="closemodal()" id="closemodal">fechar</button>
+                </div>
+              </div>
+            </div>
           </div>  
-          <div class="modals wrapper d-none" id="modal2">
-            <h2>ESSE É O HEADER 2</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ducimus, provident voluptatem unde tenetur earum eaque amet ipsa quae porro sequi aliquam, eligendi quia cumque? Libero voluptatem error voluptas cum.</p>
-            <button onclick="closemodal()" id="closemodal">fechar</button>
-          </div>  
+          <div class="modals d-none" id="modal2">
+            <div class="modal-dialog wrapper">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="btn-close" onclick="closemodal()" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate velit accusamus sint veritatis quibusdam saepe voluptatibus nesciunt placeat molestias reprehenderit ea sapiente ex, mollitia rerum aut harum libero deleniti suscipit.
+                </div>
+                <div class="modal-footer">
+                  <button class="button" onclick="closemodal()" id="closemodal">fechar</button>
+                </div>
+              </div>
+            </div>
+          </div>   
           
       </div>
       </section>
@@ -387,9 +409,19 @@
       </section>
     </main>
     <footer>
-      <a class="whatsapp-flutuante d-none" href="https://api.whatsapp.com/send?phone=559183816766&text=Quero%20fazer%20um%20or%C3%A7amento." target="_blank">
-  <i class="fa fa-whatsapp"></i>
-  </a>
+      <div class="wrapper">
+        <a class="whatsapp-flutuante d-none" href="https://api.whatsapp.com/send?phone=559183816766&text=Quero%20fazer%20um%20or%C3%A7amento." target="_blank">
+          <i class="fa fa-whatsapp"></i>
+        </a>
+        <div class="footer">
+          <h1>Detetive Junior</h1>
+          <a class="logo" style="text-decoration: none; color: white; font-size: 2rem;" href="#">
+            <i class="fa fa-search"></i>
+          </a>
+          <p>&#169;2023 - detetivejunior </p>
+          <p>Desenvolvido por <a href="https://github.com/KevinWashington">Kevin Washington</a></p>
+        </div>
+      </div>
     </footer>
     <script src="main.js"></script>
   </body>

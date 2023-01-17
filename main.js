@@ -4,10 +4,8 @@ let whatsappFlutuante = document.querySelector(".whatsapp-flutuante");
 function onScroll() {
   if (scrollY > 0) {
     navigation.classList.add('scroll')
-    whatsappFlutuante.classList.remove('d-none')
   } else {
     navigation.classList.remove('scroll')
-    whatsappFlutuante.classList.add("d-none");
   }
   if (scrollY > 300) {
     whatsappFlutuante.classList.remove("d-none");
@@ -59,14 +57,17 @@ var swiper = new Swiper(".slide-content", {
 function openmodal1() {
   let modal = document.querySelector("#modal1");
   modal.classList.remove("d-none")
+  navigation.classList.add("d-none");
 }
 
 function openmodal2() {
   let modal = document.querySelector("#modal2");
   modal.classList.remove("d-none");
+  navigation.classList.add("d-none");
 }
 
 function closemodal(){
+  navigation.classList.remove("d-none");
   let modal = document.querySelectorAll(".modals");
   console.log(modal)
   modal.forEach(element => {

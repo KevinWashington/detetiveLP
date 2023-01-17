@@ -20,7 +20,7 @@ function openMenu() {
 }
 
 function closeMenu() {
-  document.body.classList.remove('menu-expanded')
+ document.body.classList.remove("menu-expanded");
 }
 
  

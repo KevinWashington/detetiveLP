@@ -216,8 +216,18 @@ body.menu-expanded .menu {
 
   width: 100vw;
   height: 100vh;
+  animation: openMenu 1s;
 
   padding-top: var(--nav-height);
+}
+
+@keyframes openMenu {
+    0% {
+        left: -100vw;
+    }
+    100% {
+        left: 0;
+    }
 }
 
 body.menu-expanded nav {

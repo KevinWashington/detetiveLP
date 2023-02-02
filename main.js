@@ -66,6 +66,24 @@ function openmodal2() {
   navigation.classList.add("d-none");
 }
 
+function openmodal3() {
+  let modal = document.querySelector("#modal3");
+  modal.classList.remove("d-none");
+  navigation.classList.add("d-none");
+}
+
+function openmodal4() {
+  let modal = document.querySelector("#modal4");
+  modal.classList.remove("d-none");
+  navigation.classList.add("d-none");
+}
+
+function openmodal5() {
+  let modal = document.querySelector("#modal5");
+  modal.classList.remove("d-none");
+  navigation.classList.add("d-none");
+}
+
 function closemodal(){
   navigation.classList.remove("d-none");
   let modal = document.querySelectorAll(".modals");

@@ -6,12 +6,12 @@
 }
 
 :root {
-  --primary-color: #00856f;
+  --primary-color: #000000;
   --headline: #22262a;
   --paragraph: #484f56;
 
-  --brand-beige: #fffaf0;
-  --brand-light: #dce9e3;
+  --brand-beige: #999;
+  --brand-light: #ddd;
 
   font-size: 62.5%; /* 1rem = 10px */
 

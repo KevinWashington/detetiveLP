@@ -10,7 +10,7 @@
   --headline: #22262a;
   --paragraph: #484f56;
 
-  --brand-beige: #999;
+  --brand-beige: #bbb;
   --brand-light: #ddd;
 
   font-size: 62.5%; /* 1rem = 10px */
@@ -122,7 +122,7 @@ header img {
   margin-inline: auto;
 
   background-color: var(--brand-beige);
-  border: 1px solid var(--brand-light);
+  border: 1px solid #6e6e6e;
   border-radius: 0.6rem;
 
   display: flex;

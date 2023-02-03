@@ -110,8 +110,9 @@ header button {
 }
 
 header img {
-  width: 26.4rem;
+  width: 100%;
   display: block;
+  border-radius: 10px 10px 0px 0px;
   margin-inline: auto;
   object-position: 0 2rem;
 }

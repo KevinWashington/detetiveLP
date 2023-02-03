@@ -84,6 +84,12 @@ function openmodal5() {
   navigation.classList.add("d-none");
 }
 
+function openmodal6() {
+  let modal = document.querySelector("#modal6");
+  modal.classList.remove("d-none");
+  navigation.classList.add("d-none");
+}
+
 function closemodal(){
   navigation.classList.remove("d-none");
   let modal = document.querySelectorAll(".modals");

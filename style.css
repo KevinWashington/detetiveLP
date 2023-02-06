@@ -71,6 +71,7 @@ header h1 {
   font-size: 3.4rem;
   color: var(--headline);
   line-height: 130%;
+  font-weight: 700;
 
   margin-bottom: 2.4rem;
 }
@@ -290,9 +291,6 @@ body.menu-expanded .logo path {
 body.menu-expanded button path {
   stroke: white;
 }
-
-
-
 
 
 .slide-container{

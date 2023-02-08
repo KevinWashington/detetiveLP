@@ -278,7 +278,7 @@ body.menu-expanded nav {
   margin-bottom: 8rem;
 }
 
-@media  (min-width: 1024px) {
+@media  (min-width: 768px) {
   .menu {
     opacity: 100;
     visibility: inherit;
@@ -456,7 +456,7 @@ body.menu-expanded button path {
 }
 
 
-@media  (max-width: 768px) {
+@media  (max-width: 420px) {
   .wrapper {
     width: 37.5rem !important;
     margin-inline: auto;
@@ -464,7 +464,15 @@ body.menu-expanded button path {
   }
 }
 
-@media  (min-width: 768px) {
+@media  (max-width: 768px) {
+  .wrapper {
+    width: 90vw !important;
+    margin-inline: auto;
+    padding-inline: 2.4rem;
+  }
+}
+
+@media  (min-width: 769px) {
   .wrapper {
     width: 90vw !important;
     margin-inline: auto;

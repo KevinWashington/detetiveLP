@@ -278,6 +278,37 @@ body.menu-expanded nav {
   margin-bottom: 8rem;
 }
 
+@media  (min-width: 1024px) {
+  .menu {
+    opacity: 100;
+    visibility: inherit;
+    
+    display: flex;
+    align-items: center;
+  }
+  .menu ul:nth-child(1){
+    flex-direction: row;
+    margin: 0;
+
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 3.1rem;
+  }
+  .menu .button {
+    margin: 0;
+    margin-left: 5rem;
+    padding: 10px 32px;
+  }
+
+  .menu .social-links {
+    display: none;
+  }
+  .open-menu,
+  .close-menu {
+    display: none;
+  }
+}
+
 .social-links {
   display: flex;
   align-items: center;
@@ -433,7 +464,7 @@ body.menu-expanded button path {
   }
 }
 
-@media  (min-width: 1024px) {
+@media  (min-width: 768px) {
   .wrapper {
     width: 90vw !important;
     margin-inline: auto;

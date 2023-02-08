@@ -33,11 +33,6 @@ body {
   overflow: overlay;
 }
 
-.wrapper {
-  width: 37.5rem !important;
-  margin-inline: auto;
-  padding-inline: 2.4rem;
-}
 
 ul {
   list-style: none;
@@ -73,6 +68,7 @@ header h1 {
   line-height: 130%;
   font-weight: 700;
 
+  margin-top: 18rem;
   margin-bottom: 2.4rem;
 }
 
@@ -110,14 +106,6 @@ header button {
   margin-left: auto;
 }
 
-header img {
-  width: 100%;
-  display: block;
-  border-radius: 10px 10px 0px 0px;
-  margin-inline: auto;
-  object-position: 0 2rem;
-}
-
 .stats {
   width: 32.7rem;
   padding-block: 4rem;
@@ -131,6 +119,25 @@ header img {
   flex-direction: column;
   justify-content: center;
   gap: 6rem;
+}
+
+@media (min-width: 768px){
+  header h1 {
+    color: #FFF;
+  }
+  
+  header p {
+    color: #FFF;
+  }
+
+  .stats{
+    margin-top: 12rem;
+    width: 100%;
+    height: 22rem;
+    flex-direction: row;
+    align-items: center;
+    gap: 20rem;
+  }
 }
 
 .stat h3 {
@@ -414,5 +421,22 @@ body.menu-expanded button path {
   }
   .swiper-navBtn{
     display: none !important;
+  }
+}
+
+
+@media  (max-width: 768px) {
+  .wrapper {
+    width: 37.5rem !important;
+    margin-inline: auto;
+    padding-inline: 2.4rem;
+  }
+}
+
+@media  (min-width: 1024px) {
+  .wrapper {
+    width: 90vw !important;
+    margin-inline: auto;
+    padding-inline: 2.4rem;
   }
 }

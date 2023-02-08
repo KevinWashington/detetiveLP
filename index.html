@@ -257,7 +257,7 @@
 
                       <div class="card-content">
                           <h2 class="name">Localização de desaparecidos</h2>
-                          <p class="description">A JS Investigações trabalha em parceria com os parentes de pessoas desaparecidas. Temos uma rede de relacionamentos vasta que pode ser explorada para essa busca. Realizamos este trabalho de uma maneira objetiva e com busca nos fatos ocorridos no passado do investigado e da família.</p>
+                          <p class="description">A RN Investigações trabalha em parceria com os parentes de pessoas desaparecidas. Temos uma rede de relacionamentos vasta que pode ser explorada para essa busca. Realizamos este trabalho de uma maneira objetiva e com busca nos fatos ocorridos no passado do investigado e da família.</p>
 
                           <button onclick="openmodal2()" class="button">Saiba mais</button>
                       </div>
@@ -509,21 +509,21 @@ Fotos, gravações telefônicas, vídeos, mensagens virtuais e até mesmo depoim
       <section class="contact">
         <div class="wrapper">
           <h3>Faça já seu orçamento!</h3>
-          <div class="app-form">
+          <form action="https://formsubmit.co/bejsouza.a@gmail.com" method="POST" class="app-form">
             <div class="app-form-group">
-              <input class="app-form-control" placeholder="NOME">
+              <input class="app-form-control" type="text" name="name" placeholder="NOME" required>
             </div>
             <div class="app-form-group">
-              <input class="app-form-control" placeholder="E-MAIL">
+              <input class="app-form-control" name="email" placeholder="E-MAIL" required>
             </div>
             <div class="app-form-group message">
-              <input class="app-form-control" placeholder="MENSAGEM">
+              <input class="app-form-control" name="message" placeholder="MENSAGEM" required>
             </div>
             <div class="app-form-group buttons">
-              
-              <button class="app-form-button button">ENVIAR</button>
+              <button type="submit" class="app-form-button button">ENVIAR</button>
             </div>
-          </div>
+            <input type="hidden" name="_next" value="https://jsinvestigacao.com.br">
+          </form>
           <h2>OU</h2>
           <a class="button" href="https://api.whatsapp.com/send?phone=559183816766&text=Quero%20fazer%20um%20or%C3%A7amento." target="_blank">
             <svg

@@ -12,6 +12,10 @@
   --dados-background: #FFFAF1;
   --servicos-background: #F7F9F9;
   --brand-green:#DCE9E2;
+  --icon-color: #fff;
+  --icon-hover: #fff;
+  --background-color: #00c800;
+  --background-hover: #009600
 }
 
 body{
@@ -77,10 +81,10 @@ h1{
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-filter: blur(3px) brightness(40%);
-    filter: blur(3px) brightness(40%);
     -moz-filter: blur(3px) brightness(40%);
     -o-filter: blur(3px) brightness(40%);
     -ms-filter: blur(3px) brightness(40%);
+    filter: blur(3px) brightness(40%);
     height: 60rem;
   }
   .heroSection img{
@@ -92,10 +96,10 @@ h1{
 .servicos h4{
   color: var(--primary-color) !important;
   margin-block: 10rem 1.6rem;
-  font-weight: 700;
   font-size: 1.4rem;
-  line-height: 150%;
   letter-spacing: 0.08em;
+  font-weight: 700;
+  line-height: 150%;
   position: relative;
 }
 
@@ -110,11 +114,11 @@ h1{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border-radius: 10px;
+  backdrop-filter: blur( 4px );
   background: rgba( 255, 255, 255, 0.6 );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 4px );
   -webkit-backdrop-filter: blur( 4px );
-  border-radius: 10px;
   border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
@@ -212,11 +216,11 @@ h1{
 .contact .app-form-control {
   width: 100%;
   padding: 10px 0;
+  font-size: 14px;
   background: none;
   border: none;
   border-bottom: 2px solid #666;
   color: rgb(26, 26, 26);
-  font-size: 14px;
   border-radius: 0;
   outline: none;
   transition: border-color .2s;
@@ -239,10 +243,10 @@ h1{
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
   gap: .5rem;
   font-weight: 500;
   margin: 2rem 0 !important;
-  text-decoration: none;
   width: 100%;
 }
 
@@ -281,6 +285,7 @@ footer p a {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align:center;
   position:fixed;
   width: 50px;
   height: 50px;
@@ -289,8 +294,72 @@ footer p a {
   background-color:#25d366;
   color:#FFF;
   border-radius:50px;
-  text-align:center;
   font-size:25px;
   box-shadow: 1px 1px 2px #888;
   z-index:1000;
 }
+
+
+
+.icon {
+  width: 48px;
+  height: 48px;
+  transform: scale(0.6) translate(20%, 20%);
+  fill: var(--icon-color)
+}
+
+.float {
+  position: fixed;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  transition: 1s;
+  background-color: var(--background-color);
+  border-radius: 50px;
+  animation: pulse 3s infinite;
+  -webkit-animation: pulse 3s infinite;
+  -moz-animation: pulse 3s infinite;
+  -o-animation: pulse 3s infinite;
+  z-index: 99999
+}
+
+.float:hover {
+  background-color: var(--background-hover)
+}
+
+.float:hover .icon {
+  fill: var(--icon-hover)
+}
+
+@-webkit-keyframes pulse {
+  0% { -webkit-box-shadow: 0 0 0 0 rgba(0, 200, 0, 1) }
+  70% { -webkit-box-shadow: 0 0 0 20px rgba(0, 200, 0, 0) }
+  100% { -webkit-box-shadow: 0 0 0 0 rgba(0, 200, 0, 0) }
+}
+
+@-o-keyframes pulse {
+  0% { -webkit-box-shadow: 0 0 0 0 rgba(0, 200, 0, 1) }
+  70% { -webkit-box-shadow: 0 0 0 20px rgba(0, 200, 0, 0) }
+  100% { -webkit-box-shadow: 0 0 0 0 rgba(0, 200, 0, 0) }
+}
+
+@-ms-keyframes pulse {
+  0% { -webkit-box-shadow: 0 0 0 0 rgba(0, 200, 0, 1) }
+  70% { -webkit-box-shadow: 0 0 0 20px rgba(0, 200, 0, 0) }
+  100% { -webkit-box-shadow: 0 0 0 0 rgba(0, 200, 0, 0) }
+}
+
+@-moz-keyframes pulse {
+  0% { -webkit-box-shadow: 0 0 0 0 rgba(0, 200, 0, 1) }
+  70% { -webkit-box-shadow: 0 0 0 20px rgba(0, 200, 0, 0) }
+  100% { -webkit-box-shadow: 0 0 0 0 rgba(0, 200, 0, 0) }
+}
+
+@keyframes pulse {
+  0% { -webkit-box-shadow: 0 0 0 0 rgba(0, 200, 0, 1) }
+  70% { -webkit-box-shadow: 0 0 0 20px rgba(0, 200, 0, 0) }
+  100% { -webkit-box-shadow: 0 0 0 0 rgba(0, 200, 0, 0) }
+}
+
